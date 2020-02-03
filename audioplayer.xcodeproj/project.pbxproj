@@ -15,6 +15,7 @@
 		C2E32A1723E89500003F5ED4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2E32A1523E89500003F5ED4 /* LaunchScreen.storyboard */; };
 		C2E32A2223E89500003F5ED4 /* audioplayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E32A2123E89500003F5ED4 /* audioplayerTests.swift */; };
 		C2E32A2D23E89500003F5ED4 /* audioplayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E32A2C23E89500003F5ED4 /* audioplayerUITests.swift */; };
+		C2E32A3B23E89844003F5ED4 /* ffdp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C2E32A3A23E89844003F5ED4 /* ffdp.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		C2E32A2823E89500003F5ED4 /* audioplayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = audioplayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E32A2C23E89500003F5ED4 /* audioplayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = audioplayerUITests.swift; sourceTree = "<group>"; };
 		C2E32A2E23E89500003F5ED4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2E32A3A23E89844003F5ED4 /* ffdp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ffdp.mp3; path = ../../../../Downloads/ffdp.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				C2E32A0E23E894FF003F5ED4 /* ViewController.swift */,
 				C2E32A1023E894FF003F5ED4 /* Main.storyboard */,
 				C2E32A1323E89500003F5ED4 /* Assets.xcassets */,
+				C2E32A3A23E89844003F5ED4 /* ffdp.mp3 */,
 				C2E32A1523E89500003F5ED4 /* LaunchScreen.storyboard */,
 				C2E32A1823E89500003F5ED4 /* Info.plist */,
 			);
@@ -235,6 +238,7 @@
 				C2E32A1723E89500003F5ED4 /* LaunchScreen.storyboard in Resources */,
 				C2E32A1423E89500003F5ED4 /* Assets.xcassets in Resources */,
 				C2E32A1223E894FF003F5ED4 /* Main.storyboard in Resources */,
+				C2E32A3B23E89844003F5ED4 /* ffdp.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
