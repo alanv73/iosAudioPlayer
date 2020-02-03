@@ -51,6 +51,7 @@
 		C2E32A2C23E89500003F5ED4 /* audioplayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = audioplayerUITests.swift; sourceTree = "<group>"; };
 		C2E32A2E23E89500003F5ED4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2E32A3A23E89844003F5ED4 /* ffdp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ffdp.mp3; path = ../../../../Downloads/ffdp.mp3; sourceTree = "<group>"; };
+		C2E32A3D23E8A3F7003F5ED4 /* ffdp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ffdp.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +102,7 @@
 		C2E32A0923E894FF003F5ED4 /* audioplayer */ = {
 			isa = PBXGroup;
 			children = (
+				C2E32A3C23E8A3E1003F5ED4 /* assets */,
 				C2E32A0A23E894FF003F5ED4 /* AppDelegate.swift */,
 				C2E32A0C23E894FF003F5ED4 /* SceneDelegate.swift */,
 				C2E32A0E23E894FF003F5ED4 /* ViewController.swift */,
@@ -129,6 +131,14 @@
 				C2E32A2E23E89500003F5ED4 /* Info.plist */,
 			);
 			path = audioplayerUITests;
+			sourceTree = "<group>";
+		};
+		C2E32A3C23E8A3E1003F5ED4 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				C2E32A3D23E8A3F7003F5ED4 /* ffdp.mp3 */,
+			);
+			path = assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
