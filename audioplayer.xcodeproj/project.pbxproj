@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C2271E5623E9EBA500AEA374 /* JLIK.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C2271E5223E9EBA300AEA374 /* JLIK.mp3 */; };
+		C2271E5723E9EBA500AEA374 /* 033 - Shocking Blue - Venus.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C2271E5323E9EBA400AEA374 /* 033 - Shocking Blue - Venus.mp3 */; };
+		C2271E5823E9EBA500AEA374 /* SGC.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C2271E5423E9EBA400AEA374 /* SGC.mp3 */; };
+		C2271E5923E9EBA500AEA374 /* 055 - War -  Cisco Kid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C2271E5523E9EBA400AEA374 /* 055 - War -  Cisco Kid.mp3 */; };
 		C2E32A0B23E894FF003F5ED4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E32A0A23E894FF003F5ED4 /* AppDelegate.swift */; };
 		C2E32A0D23E894FF003F5ED4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E32A0C23E894FF003F5ED4 /* SceneDelegate.swift */; };
 		C2E32A0F23E894FF003F5ED4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E32A0E23E894FF003F5ED4 /* ViewController.swift */; };
@@ -36,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C2271E5223E9EBA300AEA374 /* JLIK.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = JLIK.mp3; sourceTree = "<group>"; };
+		C2271E5323E9EBA400AEA374 /* 033 - Shocking Blue - Venus.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "033 - Shocking Blue - Venus.mp3"; sourceTree = "<group>"; };
+		C2271E5423E9EBA400AEA374 /* SGC.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SGC.mp3; sourceTree = "<group>"; };
+		C2271E5523E9EBA400AEA374 /* 055 - War -  Cisco Kid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "055 - War -  Cisco Kid.mp3"; sourceTree = "<group>"; };
 		C2E32A0723E894FF003F5ED4 /* audioplayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = audioplayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E32A0A23E894FF003F5ED4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2E32A0C23E894FF003F5ED4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +116,10 @@
 				C2E32A0E23E894FF003F5ED4 /* ViewController.swift */,
 				C2E32A1023E894FF003F5ED4 /* Main.storyboard */,
 				C2E32A1323E89500003F5ED4 /* Assets.xcassets */,
+				C2271E5323E9EBA400AEA374 /* 033 - Shocking Blue - Venus.mp3 */,
+				C2271E5223E9EBA300AEA374 /* JLIK.mp3 */,
+				C2271E5423E9EBA400AEA374 /* SGC.mp3 */,
+				C2271E5523E9EBA400AEA374 /* 055 - War -  Cisco Kid.mp3 */,
 				C2E32A3A23E89844003F5ED4 /* ffdp.mp3 */,
 				C2E32A1523E89500003F5ED4 /* LaunchScreen.storyboard */,
 				C2E32A1823E89500003F5ED4 /* Info.plist */,
@@ -247,8 +259,12 @@
 			files = (
 				C2E32A1723E89500003F5ED4 /* LaunchScreen.storyboard in Resources */,
 				C2E32A1423E89500003F5ED4 /* Assets.xcassets in Resources */,
+				C2271E5623E9EBA500AEA374 /* JLIK.mp3 in Resources */,
 				C2E32A1223E894FF003F5ED4 /* Main.storyboard in Resources */,
+				C2271E5823E9EBA500AEA374 /* SGC.mp3 in Resources */,
+				C2271E5723E9EBA500AEA374 /* 033 - Shocking Blue - Venus.mp3 in Resources */,
 				C2E32A3B23E89844003F5ED4 /* ffdp.mp3 in Resources */,
+				C2271E5923E9EBA500AEA374 /* 055 - War -  Cisco Kid.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
