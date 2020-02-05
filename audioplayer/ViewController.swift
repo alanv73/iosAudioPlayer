@@ -11,7 +11,7 @@ import AVFoundation
 
 class ViewController: UIViewController {
     
-    var player = AVAudioPlayer()
+    var player: AVAudioPlayer!
     var timer = Timer()
     var songList = [Int: [String: String]]()
     var currentSong = 0
@@ -19,12 +19,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var scrubber: UISlider!
     @IBOutlet weak var sliderVolume: UISlider!
     @IBOutlet weak var lblScrubber: UILabel!
+    @IBOutlet weak var imgCover: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         loadSongs()
-        
         queueSong()
     }
 
@@ -94,24 +94,45 @@ class ViewController: UIViewController {
         
         song["title"] = "Instant Karma"
         song["artist"] = "John Lennon"
+        song["cover"] = "karma.jpg"
         song["file"] = "JLIK"
         songList[0] = song
         
         song["title"] = "Cecilia"
         song["artist"] = "Simon & Garfunkel"
+        song["cover"] = "cecilia.jpg"
         song["file"] = "SGC"
         songList[1] = song
+        
+        song["title"] = "Venus"
+        song["artist"] = "Shocking Blue"
+        song["cover"] = "venus.jpg"
+        song["file"] = "SBV"
+        songList[2] = song
+        
+        song["title"] = "Cisco Kid"
+        song["artist"] = "War"
+        song["cover"] = "cisco.jpg"
+        song["file"] = "WCK"
+        songList[3] = song
         
     }
     
     func queueSong() {
-         let audioPath = Bundle.main.path(forResource: songList[currentSong]!["file"], ofType: "mp3")
+        let audioPath = Bundle.main.path(forResource: songList[currentSong]!["file"]!, ofType: "mp3")
         
          do {
              try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: audioPath!))
              scrubber.maximumValue = Float(player.duration)
             
-            lblScrubber.text = "\(String(describing: songList[currentSong]!["title"])) by \(String(describing: songList[currentSong]!["artist"]))"
+            let title = songList[currentSong]!["title"]
+            let artist = songList[currentSong]!["artist"]
+            let label = "\(title ?? "unknown") by \(artist ?? "unknown")"
+            
+            let image = songList[currentSong]!["cover"]
+            
+            imgCover.image = UIImage(named: image ?? "")
+            lblScrubber.text = label
          } catch {
              
          }
