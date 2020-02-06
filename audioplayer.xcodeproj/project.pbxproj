@@ -23,6 +23,7 @@
 		E7272E9823EA467600A64E6C /* venus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E7272E9623EA467600A64E6C /* venus.jpg */; };
 		E7272E9B23EA46A100A64E6C /* karma.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E7272E9923EA46A100A64E6C /* karma.jpg */; };
 		E7272E9C23EA46A100A64E6C /* cecilia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E7272E9A23EA46A100A64E6C /* cecilia.jpg */; };
+		E73603C323ECB74E00A9A06F /* colormusic.png in Resources */ = {isa = PBXBuildFile; fileRef = E73603C223ECB74E00A9A06F /* colormusic.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		E7272E9623EA467600A64E6C /* venus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = venus.jpg; sourceTree = "<group>"; };
 		E7272E9923EA46A100A64E6C /* karma.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = karma.jpg; sourceTree = "<group>"; };
 		E7272E9A23EA46A100A64E6C /* cecilia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cecilia.jpg; sourceTree = "<group>"; };
+		E73603C223ECB74E00A9A06F /* colormusic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colormusic.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 		C2E32A3C23E8A3E1003F5ED4 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				E73603C223ECB74E00A9A06F /* colormusic.png */,
 				E7272E9A23EA46A100A64E6C /* cecilia.jpg */,
 				E7272E9923EA46A100A64E6C /* karma.jpg */,
 				E7272E9523EA467500A64E6C /* cisco.jpg */,
@@ -273,6 +276,7 @@
 				C2E32A1223E894FF003F5ED4 /* Main.storyboard in Resources */,
 				E7272E9B23EA46A100A64E6C /* karma.jpg in Resources */,
 				C2271E5823E9EBA500AEA374 /* SGC.mp3 in Resources */,
+				E73603C323ECB74E00A9A06F /* colormusic.png in Resources */,
 				C2271E5723E9EBA500AEA374 /* SBV.mp3 in Resources */,
 				C2271E5923E9EBA500AEA374 /* WCK.mp3 in Resources */,
 			);

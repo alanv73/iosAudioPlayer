@@ -9,7 +9,8 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController {
+
+class ViewController: UIViewController, AVAudioPlayerDelegate {
     
     var player: AVAudioPlayer!
     var timer = Timer()
@@ -24,6 +25,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         loadSongs()
         queueSong()
     }
@@ -33,11 +35,23 @@ class ViewController: UIViewController {
             player.pause()
             timer.invalidate()
         } else {
-            player.play()
-            timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.updateScrubber), userInfo: nil, repeats: true)
+//            player.play()
+//            player?.delegate = self
+//            timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.updateScrubber), userInfo: nil, repeats: true)
+            music()
         }
         
         
+    }
+    
+    func music() {
+        timer.invalidate()
+        scrubber.value = 0
+        player.delegate = self
+        player.prepareToPlay()
+        player.play()
+        player?.delegate = self
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.updateScrubber), userInfo: nil, repeats: true)
     }
     
     @IBAction func stopClicked(_ sender: Any) {
@@ -97,6 +111,18 @@ class ViewController: UIViewController {
         if playing {
             player.play()
         }
+    }
+    
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        if player.currentTime == TimeInterval(0) {
+            if currentSong < songList.count - 1 {
+                currentSong += 1
+            } else {
+                currentSong = 0
+            }
+            queueSong()
+        }
+        music()
     }
     
     func loadSongs() {
