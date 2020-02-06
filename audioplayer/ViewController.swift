@@ -35,9 +35,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             player.pause()
             timer.invalidate()
         } else {
-//            player.play()
-//            player?.delegate = self
-//            timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.updateScrubber), userInfo: nil, repeats: true)
+
             music()
         }
         
