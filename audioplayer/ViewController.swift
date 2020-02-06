@@ -40,6 +40,13 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func stopClicked(_ sender: Any) {
+        player.stop()
+        timer.invalidate()
+        scrubber.value = 0
+        player.currentTime = 0
+    }
+    
     @IBAction func sliderMoved(_ sender: Any) {
         player.volume = sliderVolume.value
     }
@@ -60,13 +67,15 @@ class ViewController: UIViewController {
 
         if currentSong > 0 {
             currentSong -= 1
-            
-            queueSong()
-            
-            scrubber.value = 0
-            if playing {
-                player.play()
-            }
+        } else {
+            currentSong = songList.count - 1
+        }
+        
+        queueSong()
+        
+        scrubber.value = 0
+        if playing {
+            player.play()
         }
     }
     
@@ -78,14 +87,15 @@ class ViewController: UIViewController {
         
         if currentSong < (songList.count - 1) {
             currentSong += 1
-
-            queueSong()
-            
-            scrubber.value = 0
-            if playing {
-                player.play()
-            }
-            
+        } else {
+            currentSong = 0
+        }
+        
+        queueSong()
+        
+        scrubber.value = 0
+        if playing {
+            player.play()
         }
     }
     

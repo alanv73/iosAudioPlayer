@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -39,6 +39,12 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="yOy-fZ-h6S"/>
+                                    <barButtonItem title="Item" image="stop.fill" catalog="system" id="TDV-AH-DPi">
+                                        <connections>
+                                            <action selector="stopClicked:" destination="BYZ-38-t0r" id="goy-ZR-o4y"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="1vK-44-b6u"/>
                                     <barButtonItem title="Play/Pause" image="playpause.fill" catalog="system" id="uXq-NV-6nq">
                                         <connections>
                                             <action selector="playClicked:" destination="BYZ-38-t0r" id="Z0a-Ad-jvy"/>
@@ -97,5 +103,6 @@
         <image name="backward.end.fill" catalog="system" width="64" height="50"/>
         <image name="forward.end.fill" catalog="system" width="64" height="50"/>
         <image name="playpause.fill" catalog="system" width="64" height="36"/>
+        <image name="stop.fill" catalog="system" width="64" height="56"/>
     </resources>
 </document>
